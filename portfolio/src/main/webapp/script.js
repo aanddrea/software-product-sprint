@@ -25,4 +25,18 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+
+
+}
+function quotes(){
+    const fun_facts =['ATLA: if I try, I fail. If I dont try, I am never going to get it', 'I am so sad wanda vison ends this week!', 
+       'The office: "I am running away from my responsibilities. And it feels good.” – Michael Scott', 'I am scred of butterflies',
+        'Half my family lives in Mexico!', 'My dream is to live in Seattle', 'My favorite food is breakfast food',
+        'I am vegetarian 🌱 ', 'My tiktok page went viral!'];
+    
+    const fact = fun_facts[Math.floor(Math.random() * fun_facts.length)];
+
+    const quotesContainer = document.getElementById('fact-container');
+    quotesContainer.innerText = fact;
+
 }
