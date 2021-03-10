@@ -30,7 +30,7 @@ function addRandomGreeting() {
 }
 function quotes(){
     const fun_facts =['ATLA: if I try, I fail. If I dont try, I am never going to get it', 'I am so sad wanda vison ends this week!', 
-       'The office: "I am running away from my responsibilities. And it feels good.” – Michael Scott', 'I am scred of butterflies',
+       'The office: "I am running away from my responsibilities. And it feels good.” – Michael Scott', 'I am scared of butterflies',
         'Half my family lives in Mexico!', 'My dream is to live in Seattle', 'My favorite food is breakfast food',
         'I am vegetarian 🌱 ', 'My tiktok page went viral!'];
     
@@ -40,3 +40,9 @@ function quotes(){
     quotesContainer.innerText = fact;
 
 }
+var elements = document.getElementsByClassName("column");
+var i;
+for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "50%";
+}
+
