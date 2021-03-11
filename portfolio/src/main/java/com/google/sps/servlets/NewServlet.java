@@ -12,8 +12,18 @@ public class NewServlet extends HttpServlet {
     
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    String[] tips;
+    tips = new String[3];
+    tips[0] = "take a deep breath";
+    tips[1] = "be grateful";
+    tips[2] = "read a book";
+
+    int rnum = (int) Math.floor(Math.random() *  tips.length);
+    String tip_show = tips[rnum];
+    
     response.setContentType("text/html;");
     response.getWriter().println("<h1>my message: hello :) nice to meet you</h1>");
-    
+    response.getWriter().println("<h1>here is a wellness tip : </h1>" + tip_show);
+
   }
 }

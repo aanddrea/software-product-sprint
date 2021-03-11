@@ -25,8 +25,6 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
-
-
 }
 function quotes(){
     const fun_facts =['ATLA: if I try, I fail. If I dont try, I am never going to get it', 'I am so sad wanda vison ends this week!', 
@@ -44,5 +42,12 @@ var elements = document.getElementsByClassName("column");
 var i;
 for (i = 0; i < elements.length; i++) {
     elements[i].style.flex = "50%";
+}
+/** Creates a map and adds it to the page. */
+function createMap() {
+    console.log("map here");
+  const map = new google.maps.Map(
+      document.getElementById('map'),
+      {center: {lat: 37.422, lng: -122.084}, zoom: 16});
 }
 

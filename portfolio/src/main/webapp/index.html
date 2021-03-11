@@ -12,7 +12,7 @@
       <p>This is my portfolio.</p>
       <a href="https://www.linkedin.com/in/andrea-ocampo-4a1923191/">linkedin</a>
       <a href="https://github.com/aanddrea">github</a>
-      <img src="/images/ice_cream.JPG" />
+      <img src="/images/ice_cream.JPG" width="200" height="300" />
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click <a href="/mySeverlet">here</a> to see content created by MY server code.</p>
       <p>Click here to get a random message:</p>
@@ -27,11 +27,22 @@
      </p>
      <div class="row"></div>     
         <div class="column">
-           <img src="/images/fam.jpg" />
-            <img src="/images/fati1.JPG" />
-            <img src="/images/GRIIT.JPG" />
+           <img src="/images/fam.jpg" width="200" height="300" />
+            <img src="/images/fati1.JPG" width="200" height="300" />
+            <img src="/images/GRIIT.JPG" width="200" height="300" />
+        </div>
         </div>
     </div>
-    </div>
+  <head>
+  <title>Hello Google Maps</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe9hm3bpwaxf8tk3YXRu72S03028uVreE"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="createMap();">
+    <h1>Hello Google Maps</h1>
+    <div id="map"></div>
+    <p>This page SHOULD SHOW a Google Map!</p>
+</body>
   </body>
 </html>
