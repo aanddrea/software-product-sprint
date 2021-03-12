@@ -6,14 +6,43 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body>
+  <body style="background-color:#e8c9f5">
     <div id="content">
       <h1>My Portfolio</h1>
       <p>This is my portfolio.</p>
+      <a href="https://www.linkedin.com/in/andrea-ocampo-4a1923191/">linkedin</a>
+      <a href="https://github.com/aanddrea">github</a>
+      <img src="/images/ice_cream.JPG" width="200" height="300" />
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Click <a href="/mySeverlet">here</a> to see content created by MY server code.</p>
       <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
+      <h>hello ʕ•́ᴥ•̀ʔっ♡</h>
+      <button onclick="addRandomGreeting()">Hello</button>
+      <button onclick="quotes()">facts!</button>
+      <div id="fact-container"> </div>
+      <h2>about me</h2>
+      <p>My name is Andrea! I am a computer science student in Chicago. I am currently taking every opportunity I have to learn as much as I can in my field.
+        I love to bake, cross stitch and travel. I also love to run, do pilates and am very interested in health.
+     </p>
+     <div class="row"></div>     
+        <div class="column">
+           <img src="/images/fam.jpg" width="200" height="300" />
+            <img src="/images/fati1.JPG" width="200" height="300" />
+            <img src="/images/GRIIT.JPG" width="200" height="300" />
+        </div>
+        </div>
     </div>
+  <head>
+  <title>Hello Google Maps</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe9hm3bpwaxf8tk3YXRu72S03028uVreE"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="createMap();">
+    <h1>Hello Google Maps</h1>
+    <div id="map"></div>
+    <p>This page shows a Google Map at chicago! This is where I am from!</p>
+</body>
   </body>
 </html>
