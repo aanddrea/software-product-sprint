@@ -46,8 +46,29 @@ for (i = 0; i < elements.length; i++) {
 /** Creates a map and adds it to the page. */
 function createMap() {
     console.log("map here");
-  const map = new google.maps.Map(
-      document.getElementById('map'),
-      {center: {lat: 37.422, lng: -122.084}, zoom: 16});
+    //Hashtable<String, double> my_dict = new Hashtable<String, double>();
+    //my goal is to show places i have been, add differnt coordinates to the map when you click a button, have
+    // to make this in a button 
+    //my gool is dictionaty the key is city name, the value is a touple of [lat, long]
+    //1. picks a random place from dictionaty 
+    //2. get its coordinates from city name
+    //3. change here center: vaules of uluru
+    
+    //double lat[] = {41.881832, 34.052235, 48.864716};
+    //double long[] = {-87.623177, 34.052235, 48.864716};
+
+    //double[] lat = new double[3]; {41.881832, 34.052235, 48.864716 };
+    // addind a poiter to chicago :)
+
+    const uluru = { lat: 41.8781, lng: -87.6298 };
+    const map = new google.maps.Map(document.getElementById('map'),
+      {center: uluru,
+       zoom: 16});
+       // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+  });
+
 }
 
